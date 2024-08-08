@@ -15,45 +15,17 @@ const router = createBrowserRouter([
     path: "/",
     element: <Main />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-
-      {
-        path: "recipes",
-        element: <Recipes />,
-      },
-      {
-        path: "profile",
-        element: <Profile />,
-      },
-      {
-        path: "recipePage",
-        element: <RecipeDetail />,
-      },
-      {
-        path: "forum",
-        element: <ForumPage />,
-      },
-      {
-        path: "contactUs",
-        element: <ContactUsPage />,
-      },
-      {
-        path: "DonationPortal",
-        element: <DonationPortal/>
-      },
-      {
-        path: "AcceptorPortal",
-        element: <AcceptorPortal/>
-      }
-      
+      { path: "/", element: <Home /> },
+      { path: "recipes", element: <Recipes /> },
+      { path: "profile", element: <Profile /> },
+      { path: "recipe-page", element: <RecipeDetail /> },
+      { path: "forum", element: <ForumPage /> },
+      { path: "contactus", element: <ContactUsPage /> },
+      { path: "donationportal", element: <DonationPortal /> },
+      { path: "acceptorportal", element: <AcceptorPortal /> },
     ],
   },
-  {
-    path: "/signup",
-    element: <Signup />,
-  }
+  { path: "/signup", element: <Signup /> },
 ]);
+
 export default router;
